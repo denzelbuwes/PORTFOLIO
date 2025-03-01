@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <p>PORTFOLIO</p>
+        </div>
+        <div class="navDiv">
+            <label for="menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+        <input type="checkbox" id="menu">
+        <ul class="nav">
+            <label for="menu">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ME">Me</a></li>
+            <li><a href="#HOBBY">Hobby</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="dark-mode-toggle">🌙</button></li>
+        </ul>
+    
+        <!-- Dark Mode Toggle Button -->
+       
+    </header>
+    
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        const toggleButton = document.getElementById("dark-mode-toggle");
+        const body = document.body;
+    
+        // Load saved mode preference
+        if (localStorage.getItem("darkMode") === "enabled") {
+            body.classList.add("dark-mode");
+        }
+    
+        toggleButton.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+            
+            // Save preference
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                localStorage.setItem("darkMode", "disabled");
+            }
+        });
+    </script>
+    
+
+    <div class="container">
+        <div class="banner" id="home">
+            <div class="content">
+                <p>WELCOME TO MY PROFILE</p>
+                <h1>
+                    Yoo, I'm Denzel <br/>
+                    a <div class="gradientText">
+                        <div class="job" data-job1="Student." data-job2="Developer."></div>
+                    </div>
+                </h1>
+                <p>
+                    I'm a second-year Computer Science student passionate about web development and AI. I enjoy creating responsive websites and exploring new technologies in my free time
+                <div class="find">
+                    <h3>LET'S TALK </h3>
+                    <ul>
+                        <li><i class="fa-brands fa-whatsapp"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-x"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="avatar">
+                <img src="avatar.png" alt="">
+            </div>
+        </div>
+        <div id="ME">
+            <h1 class="title">PERSONAL DETAILS</h1>
+            <div class="listMe">
+                <div class="item">     
+                        <li><strong>Full Name:</strong> BUWEMBO DAVID DENZEL </li>
+                        <li><strong>Student ID:</strong> S23B23/O74 || B25565</li>
+                        <li><strong>Course & Year:</strong> BSc Computer Science - Year 2</li>
+                        
+                </div>
+                <div class="item">     
+                    <h2>Career Goals</h2>
+                    <p>My primary career objective is to become a full-stack developer specializing in AI-powered web applications. 
+                    I aim to master both front-end and back-end technologies while developing expertise in machine learning integration.</p>
+                    
+                    <p>In the long term, I aspire to lead development teams and contribute to open-source projects that make web technologies 
+                    more accessible to underprivileged communities. I'm particularly interested in working on educational platforms that 
+                    democratize coding knowledge globally.</p>
+            
+                    
+            </div>
+            </div>
+           </div> 
+
+      <div id="HOBBY">
+        <h1 class="title">HOBBIES</h1>
+        <div class="listSkill">
+            <div class="item">
+                <div class="name">SLEEPING</div>
+                <div class="evaluate" style="--point:80%"></div>
+            </div>
+            <div class="item">
+                <div class="name">SOCIALING</div>
+                <div class="evaluate" style="--point:70%"></div>
+            </div>
+            
+            <div class="item">
+                <div class="name">FOOTBALL</div>
+                <div class="evaluate" style="--point:60%"></div>
+            </div>
+            <div class="item">
+                <div class="name">GAMING</div>
+                <div class="evaluate" style="--point:70%"></div>
+            </div>
+            <div class="item">
+                <div class="name">CODING</div>
+                <div class="evaluate" style="--point:90%"></div>
+            </div>
+            <div class="item">
+                <div class="name">LISTENING TO MUSIC</div>
+                <div class="evaluate" style="--point:60%"></div>
+            </div>
+            <div class="item">
+                <div class="name">TECH REVIEWS</div>
+                <div class="evaluate" style="--point:70%"></div>
+            </div>
+        </div>
+       </div> 
+       <div id="project">
+            <h1 class="title">PROJECT</h1>
+            <div class="listProject">
+                <div class="item">
+                    <table border="1">
+                        <caption>Year 2 - Semester 1 (GPA: 4.54)</caption>
+                        <thead>
+                          <tr>
+                            <th>COURSE</th>
+                            <th>MARK</th>
+                            <th>CU</th>
+                            <th>GP</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>CS Field Attachment I - Workshop Practice</td>
+                            <td>86</td>
+                            <td>3</td>
+                            <td>5</td>
+                          </tr>
+                          <tr>
+                            <td>Object Oriented Programming</td>
+                            <td>93</td>
+                            <td>4</td>
+                            <td>5</td>
+                          </tr>
+                          <tr>
+                            <td>Operating Systems</td>
+                            <td>70</td>
+                            <td>3</td>
+                            <td>4</td>
+                          </tr>
+                          <tr>
+                            <td>Design and Analysis of Algorithms</td>
+                            <td>65</td>
+                            <td>3</td>
+                            <td>3.5</td>
+                          </tr>
+                          <tr>
+                            <td>Calculus</td>
+                            <td>85</td>
+                            <td>3</td>
+                            <td>5</td>
+                          </tr>
+                          <tr>
+                            <td>Data Science</td>
+                            <td>82</td>
+                            <td>4</td>
+                            <td>5</td>
+                          </tr>
+                          <tr>
+                            <td>Understanding Ethics from a Christian Perspective</td>
+                            <td>74</td>
+                            <td>3</td>
+                            <td>4</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="name">
+                    My Results
+                    </div>
+                </div>
+                <div class="item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2zAdu6aFHD4?si=53GsNIi20iY6aBsP" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer;
+                     autoplay; clipboard-write; encrypted-media; 
+                     gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                     <br>
+                    <div class="name">
+                        THIS IS FIRST HOBBY VIDEO
+                    </div>
+                </div>
+                <div class="item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EUb_04MdnMI" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer;
+                     autoplay; clipboard-write; encrypted-media; 
+                     gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="name">
+                        THIS IS SECOND HOBBY VIDEO
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="https://www.studyfetch.com" target="_blank">My Favorite Learning Resource</a><br>
+                    <a href="https://ucu.ac.ug/" target="_blank">Uganda Christain  University</a><br>
+                    <a href="buwembodavid50@gmail.com" target="_blank">buwembodavid50@gmail.com</a><br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="name">
+                        Important Links 
+                    </div>
+                </div>
+
+            </div>
+       </div>
+       <div id="contact Me">
+        <h1 class="title">Contact</h1>
+        <ul class="contact">
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+            <li><i class="fa-brands fa-x"></i></li>
+        </ul>
+       </div>
+    </div>
+    
+</body>
+</html>
